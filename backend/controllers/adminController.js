@@ -99,4 +99,22 @@ const loginAdmin=async(req,res)=>{
     }
 }
 
-export {addDoctor,loginAdmin}
+//API to get all doctors list from admin panel
+const allDoctors=async(req,res)=>{
+    try{
+        const doctors=await doctorModel.find({}).select('-password')
+        res.json({
+            success:true,
+            doctors
+        })
+    }
+    catch(err){
+        console.log(err)
+        res.json({
+            success:false,
+            message:err.message
+        })
+    }
+}
+
+export {addDoctor,loginAdmin,allDoctors}
