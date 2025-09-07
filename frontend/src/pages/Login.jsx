@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useContext } from 'react'
-import { AppContext } from '../context/AppContext.jsx'
+import { AppContext } from '../context/AppContext'
 import axios from "axios"
 import {toast} from "react-toastify"
 import { useEffect } from 'react'
