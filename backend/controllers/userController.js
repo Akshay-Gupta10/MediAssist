@@ -4,7 +4,6 @@ import userModel from "../models/userModel.js"
 import jwt from "jsonwebtoken"
 import {v2 as cloudinary} from "cloudinary"
 
-//API to register user
 const registerUser=async(req,res)=>{
     try{
         const {name,email,password}=req.body
@@ -93,7 +92,7 @@ const loginUser=async(req,res)=>{
 
 const getProfile=async(req,res)=>{
     try{
-        const {userId}=req.body
+        const userId=req.user.id
         const userData=await userModel.findById(userId).select('-password')
 
         res.json({
@@ -112,9 +111,9 @@ const getProfile=async(req,res)=>{
 
 const updateProfile=async(req,res)=>{
     try{
-        const {userId,name,phone,address,dob,gender}=req.body
+        const userId=req.user.id
+        const {name,phone,address,dob,gender}=req.body
         const imageFile=req.file
-
 
         if(!name || !phone || !dob || !gender){
             return res.json({
