@@ -2,6 +2,9 @@
 
 MediAssist is a web-based healthcare platform that helps patients easily find doctors by specialty, book appointments, and make hassle-free payments. Doctors can manage their availability, while the admin panel provides full control over users, doctors, and bookings.  
 
+### Live Demo:
+- User View : https://mediassist-frontend.onrender.com/
+- Admin Panel : https://mediassist-admin.onrender.com/
 ---
 
 ## 🚀 Features
