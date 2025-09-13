@@ -8,7 +8,7 @@ const Footer = () => {
             {/* Left Section */}
             <div>
                 <img className='mb-5 w-40' src={assets.logo} alt="" />
-                <p className='w-full md:w-2/3 text-gray-600 leading-6'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto ipsam aliquam incidunt itaque illo at in assumenda iste fugiat vero! Quo quam doloribus fuga, voluptas eveniet molestias voluptatibus eos deleniti.</p>
+                <p className='w-full md:w-2/3 text-gray-600 leading-6'>MediAssist is a web-based healthcare platform that helps patients easily find doctors by specialty, book appointments, and make hassle-free payments. Doctors can manage their availability, while the admin panel provides full control over users, doctors, and bookings.</p>
             </div>
 
             {/* Center Section */}
